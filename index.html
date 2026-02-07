@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MABBIE FARD | PRODUCER</title>
+    <style>
+        body, html {
+            margin: 0; padding: 0; height: 100%;
+            background-color: #000;
+            color: #fff;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            display: flex; justify-content: center; align-items: center;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        /* Deep cinematic red glow */
+        .vignette {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(circle, rgba(100, 0, 0, 0.2) 0%, rgba(0, 0, 0, 1) 90%);
+            z-index: 1; pointer-events: none;
+        }
+
+        .container {
+            z-index: 10;
+            width: 90%;
+            max-width: 1000px;
+        }
+
+        .name {
+            font-size: clamp(1rem, 4vw, 1.5rem);
+            letter-spacing: 12px;
+            font-weight: 300;
+            text-transform: uppercase;
+            color: #888;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: clamp(3.5rem, 15vw, 10rem);
+            font-weight: 900;
+            letter-spacing: -4px;
+            margin: 0;
+            line-height: 0.8;
+            text-transform: uppercase;
+            color: #ff0000;
+            /* Subtle flicker animation for a cinematic feel */
+            animation: flicker 4s infinite;
+        }
+
+        .coming-soon {
+            font-size: clamp(1.2rem, 5vw, 2.5rem);
+            font-weight: 900;
+            letter-spacing: 8px;
+            margin: 30px 0;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        .stats {
+            font-size: clamp(0.7rem, 2vw, 1rem);
+            letter-spacing: 4px;
+            color: #555;
+            text-transform: uppercase;
+            margin-bottom: 50px;
+        }
+
+        .email-box {
+            border-top: 1px solid #222;
+            padding-top: 40px;
+        }
+
+        .email-text {
+            font-family: monospace;
+            font-size: clamp(0.9rem, 3vw, 1.3rem);
+            letter-spacing: 2px;
+            color: #fff;
+        }
+
+        .label {
+            font-size: 0.6rem;
+            color: #444;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        @keyframes flicker {
+            0%, 18%, 22%, 25%, 53%, 57%, 100% { opacity: 1; }
+            20%, 24%, 55% { opacity: 0.7; }
+        }
+
+        /* Grain effect */
+        .noise {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Grain.jpg');
+            opacity: 0.03;
+            pointer-events: none;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="vignette"></div>
+    <div class="noise"></div>
+
+    <div class="container">
+        <div class="name">MABBIE FARD</div>
+        <h1>COMING<br>SOON</h1>
+        
+        <div class="stats">
+            1.6M+ VERIFIED STREAMS &nbsp;|&nbsp; #1 PERSIAN METAL SEARCH
+        </div>
+
+        <div class="email-box">
+            <span class="label">Inquiries</span>
+            <div class="email-text">FARDMABBIE@PROTON.ME</div>
+        </div>
+    </div>
+
+</body>
+</html>
